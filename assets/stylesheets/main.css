@@ -1,0 +1,567 @@
+/*=======================================*
+
+                css reset
+
+*========================================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*=======================================*
+
+                  my reset
+
+*========================================*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*=======================================*
+
+                  global
+
+*========================================*/
+
+.container-1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.container-2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.container-3 {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/*=======================================*
+
+                  typography
+
+*========================================*/
+
+body {
+  font: 400 12px/1.5 'Montserrat', sans-serif;
+  color: #666;
+}
+
+h1,
+h2,
+h3,
+.logo {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #333;
+}
+
+h4,
+h5 {
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #333;
+}
+
+h1 {
+  font-size: 61px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*=======================================*
+
+                  header
+
+*========================================*/
+
+.header {
+  padding: 15px 0;
+  text-transform: uppercase;
+  background: #fff2;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar {
+  flex: 0 1 60%;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+  color: #fff;
+}
+
+strong,
+.active {
+  color: #ED563A;
+}
+
+.button {
+  color: #fff;
+  background: #ED563A;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.button-1 {
+  padding: 15px;
+}
+
+/*=======================================*
+
+                first section
+
+*========================================*/
+
+.sec-1 {
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  height: 115vh;
+}
+
+.sec-1 h1 {
+  padding-bottom: 35px;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.hero-sec {
+  padding-top: 45vh;
+}
+
+.hero-sec p {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#gym-video {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*=======================================*
+
+                second section
+
+*========================================*/
+
+.section-pads {
+  padding: 100px 0;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro img {
+  padding: 15px 0;
+}
+
+.program {
+  flex: 0 1 49%;
+  margin-top: 50px;
+}
+
+.program-img {
+  flex: 0 1 18%;
+}
+
+.program-text {
+  flex: 0 1 77%;
+}
+
+.button-link {
+  display: block;
+  color: #ED563A;
+  text-transform: uppercase;
+}
+
+.program-text p {
+  padding: 5px 0;
+}
+
+.program-text a:not(.button-link) {
+  color: #278EFF;
+}
+
+/*=======================================*
+
+                  third section
+
+*========================================*/
+
+.sec-3 {
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+  background: url(../images/cta-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.sec-3 h2 {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.sec-3 p {
+  padding-bottom: 20px;
+}
+
+/*=======================================*
+
+                fourth section
+
+*========================================*/
+
+.class-list {
+  flex: 0 1 35%;
+}
+
+.class-art {
+  flex: 0 1 60%;
+}
+
+.class-flex {
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.class-list li:not(.list-button) {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px 0 #aaa;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.first-class {
+  color: #ED563A;
+}
+
+.class-list img {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.button-2 {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.class-art p {
+  margin: 20px 0;
+}
+
+.class-art h4 {
+  margin-top: 20px;
+}
+
+.class-art img {
+  border-radius: 5px;
+}
+
+/*=======================================*
+
+                fifth section
+
+*========================================*/
+
+.sec-5 {
+  background: url(../images/schedule-bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.sec-5 h3 {
+  color: #fff;
+}
+
+.day-schedule a {
+  padding: 0 10px;
+}
+
+.schedule-table {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.schedule-table caption {
+  margin-bottom: 40px;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #fff;
+  padding: 30px;
+  text-transform: capitalize;
+}
+
+/*=======================================*
+
+                sixth section
+
+*========================================*/
+
+.trainers {
+  margin-top: 60px;
+}
+
+.trainer-profile {
+  flex: 0 1 30%;
+  padding: 30px;
+  box-shadow: 0 0 5px 0 #aaa;
+  border-radius: 5px;
+}
+
+.social-menu {
+  display: inline-flex;
+}
+
+.fab {
+  font-size: 20px;
+  color: #444;
+  padding-right: 20px;
+}
+
+.trainer-type {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.trainer-details {
+  margin: 15px 0;
+}
+
+/*=======================================*
+
+                seventh section
+
+*========================================*/
+
+.iframe,
+.form-sec {
+  flex: 0 1 50%;
+  font-size: 0;
+}
+
+.form {
+  padding: 40px;
+  background: #fff;
+}
+
+.form-sec {
+  padding: 50px;
+  background: url(../images/contact-bg.jpg);
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 5px 0;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.username,
+.useremail {
+  flex: 0 1 48%;
+}
+
+.button-3 {
+  margin: 5px 0;
+  border: 0;
+}
+
+/*=======================================*
+
+                  footer
+
+*========================================*/
+
+footer {
+  text-align: center;
+}
+
+small {
+  line-height: 7;
+  font-size: 10px;
+}
