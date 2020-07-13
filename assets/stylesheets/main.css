@@ -251,7 +251,7 @@ a {
   color: #fff;
 }
 
-strong,
+span,
 .active {
   color: #ED563A;
 }
@@ -274,10 +274,11 @@ strong,
 *========================================*/
 
 .sec-1 {
+  position: relative;
   text-align: center;
   color: #fff;
-  background: rgba(0, 0, 0, 0.7);
-  height: 115vh;
+  background: rgba(0, 0, 0, 0.4);
+  height: 115.5vh;
 }
 
 .sec-1 h1 {
@@ -298,7 +299,7 @@ strong,
 
 #gym-video {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   left: 0;
   top: 0;
   z-index: -1;
@@ -525,10 +526,12 @@ strong,
 .form {
   padding: 40px;
   background: #fff;
+  border-radius: 10px;
 }
 
 .form-sec {
   padding: 50px;
+  height: 425px;
   background: url(../images/contact-bg.jpg);
 }
 
@@ -549,6 +552,7 @@ strong,
 .button-3 {
   margin: 5px 0;
   border: 0;
+  border-radius: 5px;
 }
 
 /*=======================================*
